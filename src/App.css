@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@1,700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  background: url("./Image/Background-Image.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.app {
+  background-image: linear-gradient(
+    255deg,
+    rgba(232, 255, 255, 0.5),
+    rgba(29, 65, 85, 0.76)
+  );
+  border: 5px ridge rgb(50, 104, 114);
+  border-radius: 80px 0 80px 0;
+  padding: 10px 30px;
+  color: rgb(4, 73, 78);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  font-family: 'Lora', serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+.container {
+  margin: 30px auto;
+}
+.balance{
+  text-align: center;
+}
+#balance-amount {
+  margin-top: -18px;
+}
+.account_summary {
+  background-color: rgb(207, 216, 218);
+  box-shadow: 4px 4px 4px 4px grey;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px 10px 10px;
+  margin: 20px 0 30px 0;
+}
+.account_summary > div {
+  flex: 1;
+  text-align: center;
+}
+.line-break{
+  border-right: 2px solid grey;
+}
+.expense {
+  color: red;
+}
+.income {
+  color: green;
+}
+.line{
+  margin: -1px 0 25px 0 !important;
+}
+ul{
+  list-style-type: none;
+  padding:0;
+  margin-bottom: 30px !important;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(223, 232, 243);
+  box-shadow: 2px 2px 2px 2px grey;
+  margin:8px 2px;
+  padding: 8px;
+}
+.minus{
+  border-right: 5px solid red ;
+}
+.plus{
+  border-right: 5px solid green ;
+}
+.delete{
+  padding: 0 5px !important;
+  /* border:0; */
+  position: absolute;
+  transform: translate(-130%, -5%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+ul li:hover .delete {
+  opacity: 1;
+}
+.add{
+  background-color: rgb(5, 53, 56) !important;
+  border: 2px ridge rgb(5, 95, 122) !important;
+}
+.add:hover, .add:focus{
+  border: 3px ridge rgb(75, 111, 117) !important;
+}
+.details{
+  padding-top: 4px;
+  font-weight: 649;
+}
+.form-group{
+  margin:8px 0;
+}
+label{
+  font-weight: bold;
+}
+form button{
+  width:100%;
+}
+.clear{
+  width:100%;
+  background-color: rgb(8, 66, 66) !important;
+  border: 2px ridge rgb(5, 95, 122) !important; 
+}
+.clear:hover, .clear:focus{
+  border: 3px ridge rgb(75, 111, 117) !important;
+}
+.footer{
+  text-align: center;
+  font-family: 'Lora', serif;
 }
